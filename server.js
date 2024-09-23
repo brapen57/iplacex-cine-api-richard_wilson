@@ -1,10 +1,10 @@
-import cors from 'cors'
-import express, { urlencoded } from 'express'
+import cors from 'cors';
+import express, { urlencoded } from 'express';
 
-import client from './src/common/db.js'
-import routes from './src/pelicula/routes.js'
+import client from './src/common/db.js';
+import routes from './src/pelicula/routes.js';
 
-const PORT = 3000 || 3001
+const PORT = process.env.PORT || 3000;
 const app = express()
 
 app.use(express.json())
